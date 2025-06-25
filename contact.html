@@ -11,16 +11,20 @@
     <!-- Header -->
     <header class="header">
         <nav class="nav">
-            <div class="nav-brand">
-                <span class="logo">🏋️ FitZone</span>
+            <div class="container">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <div class="nav-brand">
+                        <span class="logo">🏋️ FitZone</span>
+                    </div>
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html" class="active">Contact</a></li>
+                    </ul>
+                    <button class="join-btn">Join Now</button>
+                </div>
             </div>
-            <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
-            </ul>
-            <button class="join-btn">Join Now</button>
         </nav>
     </header>
 
@@ -33,46 +37,42 @@
     </section>
 
     <!-- Contact Form and Info -->
-    <section class="contact-section">
+    <section class="contact-form">
         <div class="container">
-            <div class="contact-grid">
+            <div class="form-grid">
                 <!-- Contact Form -->
-                <div class="contact-form">
+                <div>
                     <h2>Send Us a Message</h2>
-                    <form>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="name">Full Name *</label>
-                                <input type="text" id="name" name="name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email Address *</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
                         </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="phone">Phone Number</label>
-                                <input type="tel" id="phone" name="phone">
-                            </div>
-                            <div class="form-group">
-                                <label for="subject">Subject *</label>
-                                <select id="subject" name="subject" required>
-                                    <option value="">Select a subject</option>
-                                    <option value="general">General Inquiry</option>
-                                    <option value="membership">Membership Information</option>
-                                    <option value="training">Personal Training</option>
-                                    <option value="classes">Group Classes</option>
-                                    <option value="support">Technical Support</option>
-                                    <option value="feedback">Feedback/Complaint</option>
-                                </select>
-                            </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="membership">Membership Information</option>
+                                <option value="training">Personal Training</option>
+                                <option value="classes">Group Classes</option>
+                                <option value="support">Technical Support</option>
+                                <option value="feedback">Feedback/Complaint</option>
+                            </select>
                         </div>
                         <div class="form-group">
                             <label for="message">Message *</label>
                             <textarea id="message" name="message" rows="6" required placeholder="Tell us how we can help you..."></textarea>
                         </div>
-                        <button type="submit" class="form-submit">📧 Send Message</button>
+                        <button type="submit" class="btn-primary" style="width: 100%;">Send Message</button>
                     </form>
                 </div>
 
@@ -81,66 +81,36 @@
                     <h2>Get in Touch</h2>
                     <p>We'd love to hear from you! Whether you have questions about our services, need help with your membership, or just want to say hello, we're here for you.</p>
                     
-                    <div class="contact-items">
-                        <div class="contact-item">
-                            <div class="contact-icon">📍</div>
-                            <div class="contact-details">
-                                <h3>Visit Us</h3>
-                                <p>123 Fitness Street<br>Gym City, GC 12345<br>United States</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">📞</div>
-                            <div class="contact-details">
-                                <h3>Call Us</h3>
-                                <p>(555) 123-4567<br>(555) 123-4568<br>Emergency: (555) 911-FIT</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">✉️</div>
-                            <div class="contact-details">
-                                <h3>Email Us</h3>
-                                <p>info@fitzone.com<br>support@fitzone.com<br>trainers@fitzone.com</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">⏰</div>
-                            <div class="contact-details">
-                                <h3>Hours</h3>
-                                <p>Mon-Fri: 5:00 AM - 11:00 PM<br>Saturday: 6:00 AM - 10:00 PM<br>Sunday: 7:00 AM - 9:00 PM</p>
-                            </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h3>Visit Us</h3>
+                            <p>123 Fitness Street<br>Gym City, GC 12345<br>United States</p>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Map Section -->
-    <section class="map-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Find <span class="gradient-text">Us</span></h2>
-                <p>Located in the heart of the city with easy access and parking</p>
-            </div>
-            <div class="map-container">
-                <div class="map-placeholder">
-                    <div class="map-icon">🗺️</div>
-                    <p>Interactive Map</p>
-                    <span>123 Fitness Street, Gym City, GC 12345</span>
-                </div>
-                <div class="map-info">
-                    <div class="map-info-item">
-                        <h3>Parking</h3>
-                        <p>Free parking available for all members</p>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h3>Call Us</h3>
+                            <p>(555) 123-4567<br>(555) 123-4568<br>Emergency: (555) 911-FIT</p>
+                        </div>
                     </div>
-                    <div class="map-info-item">
-                        <h3>Public Transport</h3>
-                        <p>Bus stop 2 minutes walk, Metro 5 minutes</p>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div>
+                            <h3>Email Us</h3>
+                            <p>info@fitzone.com<br>support@fitzone.com<br>trainers@fitzone.com</p>
+                        </div>
                     </div>
-                    <div class="map-info-item">
-                        <h3>Accessibility</h3>
-                        <p>Fully wheelchair accessible facility</p>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">⏰</div>
+                        <div>
+                            <h3>Hours</h3>
+                            <p>Mon-Fri: 5:00 AM - 11:00 PM<br>Saturday: 6:00 AM - 10:00 PM<br>Sunday: 7:00 AM - 9:00 PM</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -150,11 +120,11 @@
     <!-- CTA Section -->
     <section class="cta">
         <div class="container">
-            <h2>Ready to Start Your Journey?</h2>
-            <p>Visit us today for a free tour and consultation with one of our fitness experts</p>
+            <h2>Ready to Get Started?</h2>
+            <p>Join our fitness family today and transform your life</p>
             <div class="cta-buttons">
-                <button class="btn-white">Schedule a Tour</button>
-                <button class="btn-outline">Call Now</button>
+                <button class="btn-white">Start Free Trial</button>
+                <a href="services.html" class="btn-outline">View Services</a>
             </div>
         </div>
     </section>
@@ -165,5 +135,13 @@
             <p>&copy; 2024 FitZone. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We\'ll get back to you soon.');
+            this.reset();
+        });
+    </script>
 </body>
 </html>
