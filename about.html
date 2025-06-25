@@ -1,124 +1,189 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - FitZone</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - FitZone</title>
+  <link rel="stylesheet" href="styles.css"/>
+
+  <!-- Digital Data Layer (Non-ACDL) -->
+  <script>
+    window.digitalData = {
+      page: {
+        pageInfo: {
+          pageName: "About Us",
+          siteSection: "About",
+          language: "en"
+        }
+      },
+      user: {
+        isLoggedIn: false
+      }
+    };
+  </script>
+
+  <!-- Adobe Client Data Layer (ACDL) Initialization -->
+  <script>
+    window.adobeDataLayer = window.adobeDataLayer || [];
+    adobeDataLayer.push({
+      event: "pageLoad",
+      page: {
+        pageName: "About Us",
+        siteSection: "About",
+        language: "en"
+      }
+    });
+  </script>
 </head>
+
 <body>
-    <!-- Header -->
-    <header class="header">
-        <nav class="nav">
-            <div class="container">
-                <div style="display: flex; justify-content: space-between; align-items: center;">
-                    <div class="nav-brand">
-                        <span class="logo">🏋️ FitZone</span>
-                    </div>
-                    <ul class="nav-menu">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html" class="active">About</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                    <button class="join-btn">Join Now</button>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="page-hero">
-        <div class="container">
-            <h1>About <span class="gradient-text">FitZone</span></h1>
-            <p>More than just a gym - we're a community dedicated to transforming lives through fitness</p>
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav">
+      <div class="container">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <div class="nav-brand">
+            <span class="logo">🏋️ FitZone</span>
+          </div>
+          <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <button class="join-btn" id="joinNowBtn" data-track-click="Join Now">Join Now</button>
         </div>
-    </section>
+      </div>
+    </nav>
+  </header>
 
-    <!-- Story Section -->
-    <section class="story">
-        <div class="container">
-            <div class="story-grid">
-                <div class="story-content">
-                    <h2>Our Story</h2>
-                    <p>Founded in 2010, FitZone started as a small neighborhood gym with a big vision: to create a welcoming space where people of all fitness levels could pursue their health goals.</p>
-                    <p>Over the years, we've grown into a premier fitness destination, but our core values remain the same. We believe that fitness is not just about physical transformation—it's about building confidence, creating community, and improving overall quality of life.</p>
-                    <p>Today, we're proud to serve over 2,000 members with state-of-the-art equipment, expert trainers, and a variety of programs designed to meet every fitness need.</p>
-                </div>
-                <div class="story-image">
-                    <div class="image-placeholder"></div>
-                    <div class="years-badge">
-                        <div class="years-number">14+</div>
-                        <div class="years-text">Years of Excellence</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- Hero Section -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>About <span class="gradient-text">FitZone</span></h1>
+      <p>More than just a gym - we're a community dedicated to transforming lives through fitness</p>
+    </div>
+  </section>
 
-    <!-- Mission & Vision -->
-    <section class="mission-vision">
-        <div class="container">
-            <div class="mv-grid">
-                <div class="mv-card">
-                    <h3>Our Mission</h3>
-                    <p>To empower individuals to achieve their fitness goals by providing exceptional facilities, expert guidance, and a supportive community that motivates and inspires lasting lifestyle changes.</p>
-                </div>
-                <div class="mv-card">
-                    <h3>Our Vision</h3>
-                    <p>To be the leading fitness destination that transforms lives, builds communities, and sets the standard for excellence in health and wellness services.</p>
-                </div>
-            </div>
+  <!-- Story Section -->
+  <section class="story">
+    <div class="container">
+      <div class="story-grid">
+        <div class="story-content">
+          <h2>Our Story</h2>
+          <p>Founded in 2010, FitZone started as a small neighborhood gym...</p>
+          <p>Over the years, we've grown into a premier fitness destination...</p>
+          <p>Today, we're proud to serve over 2,000 members...</p>
         </div>
-    </section>
+        <div class="story-image">
+          <div class="image-placeholder"></div>
+          <div class="years-badge">
+            <div class="years-number">14+</div>
+            <div class="years-text">Years of Excellence</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Values Section -->
-    <section class="values">
-        <div class="container">
-            <div class="section-header">
-                <h2>Our <span class="gradient-text">Values</span></h2>
-                <p>The principles that guide everything we do</p>
-            </div>
-            <div class="values-grid">
-                <div class="value-item">
-                    <div class="value-icon">🎯</div>
-                    <h3>Goal-Oriented</h3>
-                    <p>We help you set and achieve realistic fitness goals with personalized training plans.</p>
-                </div>
-                <div class="value-item">
-                    <div class="value-icon">❤️</div>
-                    <h3>Community First</h3>
-                    <p>Our supportive community creates lasting friendships and motivation for your journey.</p>
-                </div>
-                <div class="value-item">
-                    <div class="value-icon">⚡</div>
-                    <h3>Results Driven</h3>
-                    <p>Our proven methods and expert trainers deliver real, measurable results.</p>
-                </div>
-                <div class="value-item">
-                    <div class="value-icon">👥</div>
-                    <h3>Inclusive Environment</h3>
-                    <p>Everyone is welcome here, regardless of fitness level or background.</p>
-                </div>
-            </div>
+  <!-- Mission & Vision -->
+  <section class="mission-vision">
+    <div class="container">
+      <div class="mv-grid">
+        <div class="mv-card">
+          <h3>Our Mission</h3>
+          <p>To empower individuals to achieve their fitness goals...</p>
         </div>
-    </section>
+        <div class="mv-card">
+          <h3>Our Vision</h3>
+          <p>To be the leading fitness destination that transforms lives...</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- CTA Section -->
-    <section class="cta">
-        <div class="container">
-            <h2>Ready to Join Our Community?</h2>
-            <p>Experience the FitZone difference and become part of our fitness family</p>
-            <button class="btn-white">Start Your Free Trial</button>
+  <!-- Values Section -->
+  <section class="values">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our <span class="gradient-text">Values</span></h2>
+        <p>The principles that guide everything we do</p>
+      </div>
+      <div class="values-grid">
+        <div class="value-item">
+          <div class="value-icon">🎯</div>
+          <h3>Goal-Oriented</h3>
+          <p>We help you set and achieve realistic fitness goals...</p>
         </div>
-    </section>
+        <div class="value-item">
+          <div class="value-icon">❤️</div>
+          <h3>Community First</h3>
+          <p>Our supportive community creates lasting friendships...</p>
+        </div>
+        <div class="value-item">
+          <div class="value-icon">⚡</div>
+          <h3>Results Driven</h3>
+          <p>Our proven methods and expert trainers deliver results.</p>
+        </div>
+        <div class="value-item">
+          <div class="value-icon">👥</div>
+          <h3>Inclusive Environment</h3>
+          <p>Everyone is welcome here, regardless of background.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 FitZone. All rights reserved.</p>
-        </div>
-    </footer>
+  <!-- CTA Section -->
+  <section class="cta">
+    <div class="container">
+      <h2>Ready to Join Our Community?</h2>
+      <p>Experience the FitZone difference and become part of our fitness family</p>
+      <button class="btn-white" id="trialBtn" data-track-click="Start Free Trial">Start Your Free Trial</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 FitZone. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Click Event Tracking Script -->
+  <script>
+    function trackClick(buttonName) {
+      // Non-ACDL digitalData event tracking
+      window.digitalData = window.digitalData || {};
+      window.digitalData.event = {
+        eventInfo: {
+          eventName: "buttonClick",
+          buttonLabel: buttonName,
+          eventAction: "click"
+        }
+      };
+
+      // ACDL push for button click
+      window.adobeDataLayer = window.adobeDataLayer || [];
+      adobeDataLayer.push({
+        event: "buttonClick",
+        eventInfo: {
+          buttonLabel: buttonName,
+          action: "click"
+        }
+      });
+
+      console.log("Tracked click for:", buttonName);
+    }
+
+    // Attach click event listeners
+    document.getElementById("joinNowBtn").addEventListener("click", function () {
+      trackClick("Join Now");
+    });
+
+    document.getElementById("trialBtn").addEventListener("click", function () {
+      trackClick("Start Free Trial");
+    });
+  </script>
 </body>
 </html>
